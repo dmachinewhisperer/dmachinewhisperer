@@ -1,13 +1,13 @@
 import React from 'react';
-import { ExternalLink, Github, Calendar, CheckCircle } from 'lucide-react';
+import { ExternalLink, Github, Calendar, CheckCircle, Server } from 'lucide-react';
 import type { ProjectComponent } from '../types/project';
 
 const uCoreOS: ProjectComponent = () => {
   const projectData = {
     title: 'μcore OS',
-    description: 'μcore is firmware for microcontrollers that implements a jupyter kernel around the micropthon interpreter and programmed using a custom, AI-first fork of jupyter notebook project. I am currently developing it as a hobby project with my friends. It is our hope notebooks will make embedded programming more accessible someday. ',
-    technologies: ['C', 'Embedded Systems', 'Micropython Project', 'Kernels', 'Jupter Notebooks'],
-    status: 'in-progress' as const,
+    description: 'μcore is firmware for microcontrollers that implements a Jupyter kernel around the MicroPython interpreter. Add %%ucore to a cell and it runs on the board instead of the host. It ships with uagent, an AI coding agent that understands both sides of the notebook and can write, run and debug cells on your behalf. I am developing it as a hobby project with my friends. We hope notebooks will make embedded programming more accessible someday.',
+    technologies: ['C', 'Embedded Systems', 'Micropython Project', 'Kernels', 'Jupter Notebooks', 'AI Agents'],
+    status: 'production' as const,
     demoUrl: 'https://dmachinewhisperer.github.io/ucore/flash/',
     githubUrl: 'https://github.com/dmachinewhisperer/ucore',
     images: [
@@ -19,7 +19,8 @@ const uCoreOS: ProjectComponent = () => {
       'Supported chips: ESP32, STM32',
       'Runs locally and can be cloud hosted',
       '80%+ jupyter messaging protocol coverage',
-      'Some components of the project are open source (upip, jmpbin)'
+      'Built-in AI agent with hardware-aware skills for each chip family',
+      'Fully open source'
     ],
     challenges: [
     ],
@@ -41,9 +42,10 @@ const uCoreOS: ProjectComponent = () => {
           <span className={`px-3 py-1 rounded-full text-sm font-medium ${
             projectData.status === 'completed' ? 'bg-green-100 text-green-800' :
             projectData.status === 'in-progress' ? 'bg-yellow-100 text-yellow-800' :
+            projectData.status === 'production' ? 'bg-purple-100 text-purple-800' :
             'bg-blue-100 text-blue-800'
           }`}>
-            <CheckCircle size={14} className="inline mr-1" />
+            {projectData.status === 'production' ? <Server size={14} className="inline mr-1" /> : <CheckCircle size={14} className="inline mr-1" />}
             {projectData.status.charAt(0).toUpperCase() + projectData.status.slice(1).replace('-', ' ')}
           </span>
         </div>

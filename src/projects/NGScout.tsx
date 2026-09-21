@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, Calendar, CheckCircle } from 'lucide-react';
+import { ExternalLink, Github, Calendar, CheckCircle, Server } from 'lucide-react';
 import type { ProjectComponent } from '../types/project';
 
 const NGScout: ProjectComponent = () => {
@@ -7,7 +7,7 @@ const NGScout: ProjectComponent = () => {
     title: 'NGScout',
     description: 'AI Agent that uses a web crawler to scan Nigerian job boards, filters listings with AI, and delivers personalized job alerts to users based on their preferences. Available as a telegram bot and web app',
     technologies: ['Automation', 'Transformers', 'Web Crawling/Scraping', 'Bot Development', 'Telegram', 'Vector Search'],
-    status: 'completed' as const,
+    status: 'production' as const,
     demoUrl: 'http://ngscout.tooling.com.ng',
     githubUrl: 'https://github.com/dmachinewhisperer/ngjobscout',
     images: [
@@ -41,9 +41,10 @@ const NGScout: ProjectComponent = () => {
           <span className={`px-3 py-1 rounded-full text-sm font-medium ${
             projectData.status === 'completed' ? 'bg-green-100 text-green-800' :
             projectData.status === 'in-progress' ? 'bg-yellow-100 text-yellow-800' :
+            projectData.status === 'production' ? 'bg-purple-100 text-purple-800' :
             'bg-blue-100 text-blue-800'
           }`}>
-            <CheckCircle size={14} className="inline mr-1" />
+            {projectData.status === 'production' ? <Server size={14} className="inline mr-1" /> : <CheckCircle size={14} className="inline mr-1" />}
             {projectData.status.charAt(0).toUpperCase() + projectData.status.slice(1).replace('-', ' ')}
           </span>
         </div>

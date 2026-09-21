@@ -32,6 +32,7 @@ const DataEngine: ProjectComponent = () => {
         <div>
           <h1 className="text-3xl font-bold text-slate-800 mb-2">{projectData.title}</h1>
           <p className="text-lg text-slate-600">{projectData.description}</p>
+          <p className="text-sm italic text-slate-500 mt-2">Proprietary system. Built and maintained in production.</p>
         </div>
         <div className="flex items-center gap-3">
           <span className={`px-3 py-1 rounded-full text-sm font-medium ${
