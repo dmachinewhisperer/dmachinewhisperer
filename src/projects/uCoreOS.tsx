@@ -8,8 +8,8 @@ const uCoreOS: ProjectComponent = () => {
     description: 'μcore is firmware for microcontrollers that implements a jupyter kernel around the micropthon interpreter and programmed using a custom, AI-first fork of jupyter notebook project. I am currently developing it as a hobby project with my friends. It is our hope notebooks will make embedded programming more accessible someday. ',
     technologies: ['C', 'Embedded Systems', 'Micropython Project', 'Kernels', 'Jupter Notebooks'],
     status: 'in-progress' as const,
-    demoUrl: '',
-    githubUrl: 'https://github.com/dmachinewhisperer/upip',
+    demoUrl: 'https://dmachinewhisperer.github.io/ucore/flash/',
+    githubUrl: 'https://github.com/dmachinewhisperer/ucore',
     images: [
       `${import.meta.env.BASE_URL}assets/project_imgs/ucore_1.png`,
       `${import.meta.env.BASE_URL}assets/project_imgs/ucore_2.png`,

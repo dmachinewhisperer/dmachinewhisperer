@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle, Server } from 'lucide-react';
+import { ExternalLink, Github, CheckCircle, Server } from 'lucide-react';
 import type { ProjectComponent } from '../types/project';
 
 const TradeCompliance: ProjectComponent = () => {
@@ -45,6 +45,24 @@ const TradeCompliance: ProjectComponent = () => {
           </span>
         </div>
       </div>
+
+      {/* Action Buttons (proprietary system: no demo or source available) */}
+    <div className="flex gap-4">
+        <button
+        disabled
+        className="flex items-center gap-2 px-4 py-2 bg-blue-300 text-white rounded-lg cursor-not-allowed opacity-60"
+        >
+        <ExternalLink size={16} />
+        No Demo
+        </button>
+        <button
+        disabled
+        className="flex items-center gap-2 px-4 py-2 border border-slate-300 text-slate-400 rounded-lg cursor-not-allowed opacity-60"
+        >
+        <Github size={16} />
+        No Source
+        </button>
+    </div>
 
       {/* Project Details Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -97,6 +115,5 @@ const TradeCompliance: ProjectComponent = () => {
 // Add required static properties
 TradeCompliance.title = 'Trade Compliance';
 TradeCompliance.description = 'Assigns HS codes to products and generates landed cost for supported markets';
-TradeCompliance.production = true;
 
 export default TradeCompliance;

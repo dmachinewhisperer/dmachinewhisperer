@@ -16,5 +16,4 @@ export interface ProjectData {
 export interface ProjectComponent extends React.FC {
   title: string;
   description: string;
-  production?: boolean;
 }

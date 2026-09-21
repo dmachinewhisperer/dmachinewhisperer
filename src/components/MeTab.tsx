@@ -58,7 +58,7 @@ const MeTab = () => {
           <h3 className="text-2xl font-bold text-slate-800 mb-4">About Me</h3>
           <div className="prose prose-slate max-w-none">
             <p className="text-slate-700 mb-4">
-              I'm a systems engineer and like putting AI into things; small things, big things, anything really. My specialty is in backends that power intelligence. Some of the areas I have worked in include business intelligence, edtech, distributed infrastructure, and embedded systems. I develop custom AI models and build end-to-end pipelines to integrate them into applications.
+              I'm a systems engineer and like putting AI into things; small things, big things, anything really. My specialty is in backends that power intelligence. Some of the areas I have worked in include business intelligence, edtech, distributed infrastructure, embedded systems, general and narrow agentic systems, and large-scale web scraping. I develop custom AI models and build end-to-end pipelines to integrate them into applications.
 
             </p>
             <p className="text-slate-700 mb-4">
@@ -114,7 +114,7 @@ const MeTab = () => {
           <div className="space-y-3">
             <div className="flex justify-between items-center">
               <span className="text-slate-600">Projects Completed</span>
-              <span className="font-bold text-blue-600">15+</span>
+              <span className="font-bold text-blue-600">20+</span>
             </div>
             <div className="flex justify-between items-center">
               <span className="text-slate-600">Years of Experience</span>

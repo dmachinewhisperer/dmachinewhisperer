@@ -63,14 +63,7 @@ const ProjectsTab = () => {
                       </div>
                     ) : (
                       <div>
-                        <div className="font-medium mb-1 flex items-center gap-2">
-                          <span>{ProjectComp.title}</span>
-                          {ProjectComp.production && (
-                            <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wide bg-purple-100 text-purple-800 border border-purple-200">
-                              Production
-                            </span>
-                          )}
-                        </div>
+                        <div className="font-medium mb-1">{ProjectComp.title}</div>
                         <div className="text-xs text-slate-500 line-clamp-2">
                           {ProjectComp.description}
                         </div>
