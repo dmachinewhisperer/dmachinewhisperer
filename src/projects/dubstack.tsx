@@ -8,8 +8,8 @@ const dubStack: ProjectComponent = () => {
     description: 'Dubstack is a browser-based web app for dubbing gameplay videos (or any video, for that matter). All models and the FFmpeg runtime run in the browser via WebAssembly',
     technologies: ['Python', 'TTS', 'ASR', 'Hugging face', 'WebAssembly'],
     status: 'completed' as const,
-    demoUrl: 'https://asogwa001.github.io/dubstack/',
-    githubUrl: 'https://github.com/asogwa001/dubstack',
+    demoUrl: 'https://dubstack.tooling.com.ng/',
+    githubUrl: 'https://github.com/dmachinewhisperer/dubstack',
     images: [
       `${import.meta.env.BASE_URL}assets/project_imgs/dubstack_1.png`,
       `${import.meta.env.BASE_URL}assets/project_imgs/dubstack_2.png`,

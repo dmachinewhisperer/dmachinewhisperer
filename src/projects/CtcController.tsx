@@ -9,7 +9,7 @@ const CtcController: ProjectComponent = () => {
     technologies: ['Robotics', 'Manipulator', '.mlapp', 'Simscape Multibody', 'MATLAB', 'Simulink'],
     status: 'completed' as const,
     demoUrl: '',
-    githubUrl: 'https://github.com/asogwa001/computed_torque',
+    githubUrl: 'https://github.com/dmachinewhisperer/computed_torque',
     images: [
         `${import.meta.env.BASE_URL}assets/project_imgs/robot_1.png`,
         `${import.meta.env.BASE_URL}assets/project_imgs/robot_2.png`,   

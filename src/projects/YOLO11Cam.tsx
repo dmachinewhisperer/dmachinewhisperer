@@ -9,7 +9,7 @@ const YOLO11Cam: ProjectComponent = () => {
     technologies: ['YOLOv11', 'Computer Vision', 'Google Gemma', 'VLMs', 'Finetuning', 'Analytics'],
     status: 'completed' as const,
     demoUrl: '',
-    githubUrl: 'https://github.com/asogwa001/yolo11-cam',
+    githubUrl: 'https://github.com/dmachinewhisperer/yolo11-cam',
     images: [
       `${import.meta.env.BASE_URL}assets/project_imgs/yolo_1.png`,
       `${import.meta.env.BASE_URL}assets/project_imgs/yolo_2.png`,

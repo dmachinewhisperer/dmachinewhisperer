@@ -8,7 +8,7 @@ const JAMBAgent: ProjectComponent = () => {
     description: 'Can regurgitate past questions with solutions and generate model questions and answers of various Nigerian national exams. It really is just a chat completions endpoint enhanced with function calling access to my MCP server that can do semantic search over a 100k+ past questions dataset (waec, neco, jamb) I found on the internet (thank you vibecoders).',
     technologies: ['onnx', 'sentence-transformers', 'Chat Completions', 'LLMs', 'Model Context Protocol', 'FAISS'],
     status: 'completed' as const,
-    demoUrl: 'https://asogwa001.github.io/llm.ui/',
+    demoUrl: 'https://dmachinewhisperer.github.io/llm.ui/',
     githubUrl: '',
     images: [
       `${import.meta.env.BASE_URL}assets/project_imgs/edu.ai_1.png`,

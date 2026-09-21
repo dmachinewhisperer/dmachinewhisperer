@@ -9,7 +9,7 @@ const NGScout: ProjectComponent = () => {
     technologies: ['Automation', 'Transformers', 'Web Crawling/Scraping', 'Bot Development', 'Telegram', 'Vector Search'],
     status: 'completed' as const,
     demoUrl: 'http://ngscout.tooling.com.ng',
-    githubUrl: 'https://github.com/asogwa001/NGScout',
+    githubUrl: 'https://github.com/dmachinewhisperer/ngjobscout',
     images: [
       `${import.meta.env.BASE_URL}assets/project_imgs/ngjobscout_1.png`,
       `${import.meta.env.BASE_URL}assets/project_imgs/ngjobscout_2.png`,

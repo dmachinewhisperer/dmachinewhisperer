@@ -6,7 +6,7 @@ const MeTab = () => {
     {
       name: 'GitHub',
       icon: Github,
-      url: 'https://github.com/asogwa001',
+      url: 'https://github.com/dmachinewhisperer',
       color: 'hover:text-gray-800'
     },
     {

@@ -9,7 +9,7 @@ const TalkingPapers: ProjectComponent = () => {
     technologies: ['onnx', 'sentence-transformers', 'PaddlePaddle', 'DotsOCR', 'FTS5', 'Vector Search'],
     status: 'completed' as const,
     demoUrl: 'https://papers.tooling.com.ng/',
-    githubUrl: 'https://github.com/asogwa001/talkingpapers',
+    githubUrl: 'https://github.com/dmachinewhisperer/talkingpapers',
     images: [
       `${import.meta.env.BASE_URL}assets/project_imgs/talkingpapers_1.png`,
       `${import.meta.env.BASE_URL}assets/project_imgs/talkingpapers_2.png`,
