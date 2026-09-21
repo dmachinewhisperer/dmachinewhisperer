@@ -4,6 +4,8 @@
 // import WeatherDashboard from './WeatherDashboard';
 // import ChatApplication from './ChatApplication';
 
+import DataEngine from './DataEngine';
+import TradeCompliance from './TradeCompliance';
 import uCoreOS from './uCoreOS'
 import YOLO11Cam from './YOLO11Cam';
 import CtcController from './CtcController';
@@ -24,6 +26,9 @@ import NGScout from './NGScout';
 // Export all projects in a single object
 // This makes it easy to add new projects - just import above and add to this object
 export const projects = {
+  'data-engine': DataEngine,
+  'trade-compliance': TradeCompliance,
+
   'ucore-os': uCoreOS,
   'ng-scout': NGScout,
   'talking-papers': TalkingPapers,

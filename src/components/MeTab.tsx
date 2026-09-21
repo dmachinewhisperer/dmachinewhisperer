@@ -26,7 +26,7 @@ const MeTab = () => {
   const skills = [
     'Distributed Systems', 'AI / ML / LLMs', 'Python', 'C', 
     'AWS', 'Model Runtimes', 'LORA / QLORA / RAG', 'Quantization',
-    'Embedded Systems', 'Containerization'
+    'Embedded Systems', 'Containerization', 'Web Scraping'
   ];
 
   return (
