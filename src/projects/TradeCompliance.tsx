@@ -114,6 +114,6 @@ const TradeCompliance: ProjectComponent = () => {
 
 // Add required static properties
 TradeCompliance.title = 'Trade Compliance';
-TradeCompliance.description = 'Assigns HS codes to products and generates landed cost for supported markets';
+TradeCompliance.description = 'HS codes and landed cost';
 
 export default TradeCompliance;

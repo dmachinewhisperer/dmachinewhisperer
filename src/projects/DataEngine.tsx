@@ -114,6 +114,6 @@ const DataEngine: ProjectComponent = () => {
 
 // Add required static properties
 DataEngine.title = 'Data Engine';
-DataEngine.description = 'Large scale data sourcing and enrichment engine for a UK online retailer';
+DataEngine.description = 'Retail data sourcing at scale';
 
 export default DataEngine;
